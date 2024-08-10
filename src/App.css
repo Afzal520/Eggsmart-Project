@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  .main-container {
+    background-image: url("/public/img/background-img.jpg");
+    background-size: cover;
+    height: 100vh;
+  }
+  .main-container .back-img{
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(10px) saturate(200%);
+    background-color: rgba(76, 95, 137, 0.6);
+  width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+  
+  .main-container .main-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* max-width: 350px; */
+  
+    padding: 0px 20px;
+    height: 100vh;
+  
+   
+  }
+  .main-container .main-form .form_title {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form_title .profile-img {
+    width: 120px;
+    height: 120px;
+  
+    border-radius: 50%;
+  }
+  .form_title .profile-img img {
+    border-radius: 50%;
+    width: 115px;
+    height: 113px;
+  }
+  .main-form span {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .message,
+  .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  .main-form .signin {
+    color: black;
+    font-size: larger;
+  }
+  
+  .main-form .signin {
+    text-align: center;
+  }
+  .main-form .signin a:hover {
+    text-decoration: underline;
+  }
+  
+  .main-form .signin a {
+    color: rgb(10, 27, 80);
+  }
+  
+  .main-form .signin a:hover {
+    text-decoration: underline;
+    color: darkblue;
+  }
+  
+  .main-container .main-form label {
+    position: relative;
+  }
+  
+  .main-container .main-form label .input {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+
+  .main-container .main-form .submit-btn {
+    margin-top: 10px;
+    width: 100%;
+  
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-container .main-form .submit-btn button {
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    transform: 0.3s ease;
+  
+    background-color: green;
+    width: 800px;
+    padding: 10px;
+    color: white;
+    border: none;
+    outline: none;
+  }
+  .main-container .main-form .submit-btn button:hover {
+    background-color: darkblue;
+  }
+  .main-container .back-img .back{
+    display: none;
+   position: absolute;
+   top: 15%;
+   left: 10%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .main-container .main-form {
+      gap: 6px;
+      max-width: 50%;
+    }
+    .main-container .back-img{
+      display: flex;
+      justify-content: end;
+    }
+    .main-container .back-img .back{
+      display: block;
+    }
+  
+    .main-container .main-form .form_title {
+      margin-bottom: 0px;
+    }
+    .main-container {
+        background-image: none;
+        background-size: cover;
+        height: 100vh;
+      }
+      .main-container .back-img{
+        backdrop-filter: blur(10px) saturate(200%);
+        -webkit-backdrop-filter: blur(10px) saturate(200%);
+        background-color:white;
+      width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+      }
+      
+  }
+  
