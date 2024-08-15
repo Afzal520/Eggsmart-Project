@@ -1,0 +1,67 @@
+import React from "react";
+
+import { IoSaveSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
+// import { GrUpdate } from "react-icons/gr";
+
+const Profile = () => {
+  let user = {
+    label: "Password",
+    name: "Melissa Peters",
+    email: "abc@gmail.com",
+    flockname: "Eggsmart",
+  };
+
+  return (
+    <section className="flock-container ">
+      <div className="px-5 py-4 grid lg:grid-cols-2 lg:justify-end back-img">
+        <div className="hidden lg:block mt-12">
+          <img src="/img/basket.jpg" alt="" />
+        </div>
+
+        <div className="">
+          {/* <div className="flex mb-6">
+            <GrUpdate className="text-[30px] mt-1" />
+            <p className="px-4 font-bold text-[22px]"> PROFILE : </p>
+          </div> */}
+          <div className=" grid justify-center  ">
+            <div className="  rounded-full">
+              <img
+                src="/img/login-img.png"
+                className="items-center  rounded-full w-[130px] h-[130px] "
+                alt="profile img"
+                srcset=""
+              />
+            </div>
+            <div className="mb-2">
+              <h1 className="font-bold px-1">{user.name}</h1>
+            </div>
+          </div>
+          {/* <form action=""> */}
+          {/* <label className="block mb-2  font-medium">Username</label>
+          <div className="border border-black w-full  rounded h-10 p-2 py-1 mb-2" >{user.name}</div> */}
+          <label className="block mb-2  font-medium">Password*</label>
+          <div className="border border-black w-full  rounded h-10 p-2 mb-2">
+            *******
+          </div>
+          <label className="block mb-2  font-medium">Email* </label>
+          <div className="border border-black w-full rounded h-10 p-2 mb-2">
+            {user.email}
+          </div>
+          <label className="block mb-2  font-medium">Farm Name* </label>
+          <div className="border border-black w-full rounded h-10 p-2 mb-2">
+            {user.flockname}
+          </div>
+          <div className="flex justify-end mt-3 mb-4 text-white">
+            <Link to="/update" className="bg-blue-950 rounded p-2 w-34 flex">
+              Edit Profile <IoSaveSharp className="mt-1 mx-3" />
+            </Link>
+          </div>
+          {/* </form> */}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Profile;

@@ -4,13 +4,14 @@ import { Link } from "react-router-dom";
 import { FaQuestion } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa";
 
-const Header = () => {
+const Header = ({Handler}) => {
   let [toggle, settoggle] = useState(false);
   let [scroll, setScrolled] = useState(true);
 
   function toggleBtn() {
     settoggle(!toggle);
-    console.log("hello");
+    Handler(toggle)
+  
   }
 
   useEffect(() => {
@@ -147,9 +148,7 @@ const Header = () => {
       </div>
 
       <div
-        className={`mobile-menu bg-slate-700  w-full absolute grid justify-start ${
-          toggle ? "" : "hidden"
-        } lg:hidden`}
+        className={`mobile-menu bg-slate-700  w-full absolute grid justify-start ${ toggle ? "" : "hidden"} lg:hidden`}
       >
         {MobileMenu.map((item, key) => (
           <Link
