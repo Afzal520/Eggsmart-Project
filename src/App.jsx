@@ -32,7 +32,7 @@ function App() {
           <Route path="/forget" element={<Forget />} />
           <Route path="/edit" element={<Edit />} />
           <Route path="/" element={<Flocks Hide={hide} />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard Hide={hide}  />} />
         </Routes>
 
         <Mobilemenu />
