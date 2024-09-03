@@ -8,48 +8,48 @@ import { GrDocumentExcel } from "react-icons/gr";
 const BoardBox = () => {
   return (
     <div className="grid  grid-cols-2 gap-2 ">
-      <div className="bg-blue-400 rounded-xl">
-        <Link to="" className=" flex items-center justify-center p-3 ">
+      <div className="bg-emerald-200 rounded-xl">
+        <Link to="" className=" flex items-center justify-center md:justify-start  md:ml-10 p-2 ">
           <span className="size-10 bg-slate-200 grid justify-center items-center rounded-full mt-1">
             <GrUpdate className="size-6" />
           </span>
-          <p className="pl-1 font-bold">On Going</p>
+          <p className="pl-1 text-[16px] font-bold">On Going</p>
         </Link>
-        <h1 className="mt-[-22px] pl-16 pb-3 text-[11px] font-medium">
+        <h1 className="mt-[-14px] pl-10 pb-3 pt-2 text-[15px] font-medium">
           12 task
         </h1>
       </div>
 
       <div className="bg-yellow-200 rounded-xl">
-        <Link to="" className=" flex items-center justify-center p-3 ">
+        <Link to="" className=" flex items-center justify-center md:justify-start  md:ml-10 p-2 ">
           <span className="size-10 bg-slate-200 grid justify-center items-center rounded-full mt-1">
             <RiProgress2Line className="size-6 " />
           </span>
-          <p className="pl-1 font-bold">In Process</p>
+          <p className="pl-1 text-[16px] font-bold">In Process</p>
         </Link>
-        <h1 className="mt-[-22px] pl-16 pb-3 text-[11px] font-medium">
-          12 task
+        <h1 className="mt-[-14px]  pl-10 pb-3 pt-2 text-[15px] font-medium">
+          1 september
         </h1>
       </div>
-      <div className="bg-red-400 rounded-xl">
-        <Link to="" className="flex items-center justify-center p-3">
+      <div className="bg-indigo-200 rounded-xl">
+        <Link to="" className="flex items-center justify-center md:justify-start  md:ml-10 p-2">
           <span className="size-10 bg-slate-200 grid justify-center items-center rounded-full mt-1">
             <HiOutlineDocumentCheck className="size-6" />
           </span>
-          <p className="pl-1 font-bold">Complete</p>
+          <p className="pl-1 text-[16px] font-bold">Complete</p>
         </Link>
-        <h1 className="mt-[-22px] pl-16 pb-3 text-[11px] font-medium">
+        <h1 className="mt-[-14px] pl-10 pb-3 pt-2 text-[15px] font-medium">
           12 task
         </h1>
       </div>
-      <div className="bg-green-500 rounded-xl">
-        <Link to="" className=" flex items-center justify-center p-3 ">
+      <div className="bg-red-200 rounded-xl">
+        <Link to="" className=" flex items-center justify-center md:justify-start  md:ml-10 p-2 ">
           <span className="size-10 bg-slate-200 grid justify-center items-center rounded-full mt-1">
             <GrDocumentExcel className="size-6" />
           </span>
-          <p className="pl-1 font-bold">Canceled</p>
+          <p className="pl-1 text-[16px] font-bold">Canceled</p>
         </Link>
-        <h1 className="mt-[-22px]  pl-16 pb-3 text-[11px] font-medium">
+        <h1 className="mt-[-14px]  pl-10 pb-3 pt-2 text-[15px] font-medium">
           12 task
         </h1>
       </div>

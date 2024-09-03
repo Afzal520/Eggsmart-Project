@@ -12,7 +12,7 @@ const Mobilemenu = () => {
   
   return (
     <section className="fixed w-full bottom-0">
-      <div className="grid grid-cols-3 bg-slate-700 p-3 gap-2">
+      <div className="grid text-white grid-cols-3 bg-slate-700 p-3 gap-2">
         <div className="grid items-center justify-center">
           <Link to="">
           <IoHomeOutline className="size-8"  />
@@ -33,7 +33,7 @@ const Mobilemenu = () => {
             <IoMdDocument  className="size-8" />
           </Link>
         </div> */}
-        <div className="grid items-center justify-center">
+        <div className="grid items-center  justify-center">
           <Link to="">
             <CgProfile  className="size-8" />
           </Link>
