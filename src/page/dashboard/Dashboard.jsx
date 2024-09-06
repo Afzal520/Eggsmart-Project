@@ -7,7 +7,7 @@ import Charts from '../../component/boardComponent/Chart'
 const Dashboard = ({Hide}) => {
   return (
     <div className='p-3'>
-      <Boardprofile Hide={Hide}/>
+    
       <BoardBox/>
       <Charts/>
     </div>
